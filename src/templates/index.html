@@ -8,6 +8,7 @@
     <link href="/static/css/bootstrap/bootstrap.min.css" rel="stylesheet">
     <script src="/static/js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="/static/js/main_register.js"></script>
+    <script src="/static/js/main_login.js"></script>
 
     <title>Munex</title>
 </head>
@@ -43,16 +44,16 @@
             <h5 class="card-title">Login</h5>
             <p class="card-text">Login</p>
             <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                <input id="main_login_user_name" type="text" class="form-control" placeholder="Username" aria-label="Username"
                     aria-describedby="basic-addon1">
             </div>
 
             <div class="input-group mb-3">
-                <input type="password" class="form-control" placeholder="Password" aria-label="Password"
+                <input id="main_login_password" type="password" class="form-control" placeholder="Password" aria-label="Password"
                     aria-describedby="basic-addon1">
             </div>
 
-            <button type="button" class="btn btn-primary">Login</button>
+            <button type="button" class="btn btn-primary" onclick="login()">Login</button>
 
         </div>
     </div>
